@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { User } from '../user.modal';
 
 @Component({
   selector: 'app-list-user',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListUserComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:DataService) { }
 
   ngOnInit() {
   }
